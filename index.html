@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Card Collector!</h1>
+        </div>
+    </div>
+
+    <div class="container p-0">
+        <ul class="list-group">
+            <li class="list-group-item">You will be given a random number at the start of the game.
+            </li>
+            <li class="list-group-item">There are four cards below. By clicking on a card you will add a specfic amount
+                of points to your total score.
+            </li>
+            <li class="list-group-item">You win the game by matching you total score to random number, you lose the game
+                if your total score goes above the random number.
+            </li>
+            <li class="list-group-item">The value of each card is hidden from you until click on it.
+            </li>
+            <li class="list-group-item">Each time when the game stars, the game will change the values of each card.
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-4">
+                <div class="card-body">
+                    <h1 class="text-center" id="scoreToMatch">0</h1>
+                    <h5 class="card-subtitle mb-2 text-muted text-center">Match This Score to win!</h5>
+                </div>
+            </div>
+            <div class="card col-4">
+                <div class="card-body">
+                    <h2 id="winsCounter">Wins: 0</h2>
+                    <h2 id="loseCounter">Lose: 0</h2>
+                </div>
+            </div>
+            <div class="card col-4">
+                <div class="card-body">
+                    <h1 class="text-center" id="playerscore">0</h1>
+                    <h5 class="card-subtitle mb-2 text-muted text-center">Your Score</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <button>
+                <img src="assets/images/aceOfSpades.svg" class="rounded" alt="..." id="ace">
+            </button>
+            <button>
+                <img src="assets/images/kingOfDiamonds.svg" class="rounded" alt="..." id="king">
+            </button>
+            <button>
+                <img src="assets/images/queenOfClubs.svg" class="rounded" alt="..." id="queen">
+            </button>
+            <button>
+                <img src="assets/images/jackOfHearts.svg" class="rounded" alt="..." id="jack">
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
