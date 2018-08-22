@@ -33,6 +33,7 @@ $('#loseCounter').text(losses);
 
 
 
+
 //Functions------------------------------------------------------------
 
 //On click functions
@@ -42,12 +43,39 @@ $("#ace").click(function () {
     if (playerScore === scoreToWin) {
         wins++;
         $('#winsCounter').text(wins);
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        $('#result').text("You won!");
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
         losses++;
         $('#loseCounter').text(losses);
-    
-    } {
-        
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        $('#result').text("You lost!");
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     }
 });
 $("#king").click(function () {
@@ -56,12 +84,39 @@ $("#king").click(function () {
     if (playerScore === scoreToWin) {
         wins++;
         $('#winsCounter').text(wins);
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        $('#result').text("You won!");
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
         losses++;
         $('#loseCounter').text(losses);
-    
-    } {
-        
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        $('#result').text("You lost!");
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     }
 });
 $("#queen").click(function () {
@@ -70,12 +125,39 @@ $("#queen").click(function () {
     if (playerScore === scoreToWin) {
         wins++;
         $('#winsCounter').text(wins);
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        $('#result').text("You won!");
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
         losses++;
         $('#loseCounter').text(losses);
-    
-    } {
-        
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        $('#result').text("You lost!");
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     }
 });
 $("#jack").click(function () {
@@ -84,15 +166,42 @@ $("#jack").click(function () {
     if (playerScore === scoreToWin) {
         wins++;
         $('#winsCounter').text(wins);
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        $('#result').text("You won!");
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
         losses++;
         $('#loseCounter').text(losses);
-    
-    } {
-        
+        playerScore = 0;
+        $('#playerscore').text(playerScore);
+        scoreToWin = Math.floor(Math.random() * (120) + 1);
+        $('#scoreToMatch').text(scoreToWin);
+        $('#result').text("You lost!");
+        //Genertating random value 1-12 for cards
+        ace = Math.floor(Math.random() * (12) + 1);
+        king = Math.floor(Math.random() * (12) + 1);
+        queen = Math.floor(Math.random() * (12) + 1);
+        jack = Math.floor(Math.random() * (12) + 1);
+        //testing and debugging
+        console.log("ace equals " + ace);
+        console.log("king equals " + king);
+        console.log("queen equals " + queen);
+        console.log("jack equals " + jack);
     }
 });
 
-//Game logic
+
 
 
