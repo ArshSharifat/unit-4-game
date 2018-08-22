@@ -37,17 +37,25 @@ $('#loseCounter').text(losses);
 //Functions------------------------------------------------------------
 
 //On click functions
+
+// On click for ace
 $("#ace").click(function () {
     playerScore = parseInt(ace) + parseInt(playerScore);
     $('#playerscore').text(playerScore);
+    //if else if for when player score matches or goes over score to win
     if (playerScore === scoreToWin) {
+        // adding to a win counter
         wins++;
         $('#winsCounter').text(wins);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
         $('#result').text("You won!");
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);
@@ -59,13 +67,18 @@ $("#ace").click(function () {
         console.log("queen equals " + queen);
         console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
+        // adding to a lose counter
         losses++;
         $('#loseCounter').text(losses);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
         $('#result').text("You lost!");
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);
@@ -78,17 +91,25 @@ $("#ace").click(function () {
         console.log("jack equals " + jack);
     }
 });
+
+// on click for king
 $("#king").click(function () {
     playerScore = parseInt(king) + parseInt(playerScore);
     $('#playerscore').text(playerScore);
+    //if else if for when player score matches or goes over score to win
     if (playerScore === scoreToWin) {
+        // adding to a win counter
         wins++;
         $('#winsCounter').text(wins);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
         $('#result').text("You won!");
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);
@@ -100,13 +121,18 @@ $("#king").click(function () {
         console.log("queen equals " + queen);
         console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
+        // adding to a lose counter
         losses++;
         $('#loseCounter').text(losses);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
         $('#result').text("You lost!");
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);
@@ -119,16 +145,24 @@ $("#king").click(function () {
         console.log("jack equals " + jack);
     }
 });
+
+// on click for queen
 $("#queen").click(function () {
     playerScore = parseInt(queen) + parseInt(playerScore);
     $('#playerscore').text(playerScore);
+    //if else if for when player score matches or goes over score to win
     if (playerScore === scoreToWin) {
+        // adding to a win counter
         wins++;
         $('#winsCounter').text(wins);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);
@@ -141,13 +175,18 @@ $("#queen").click(function () {
         console.log("queen equals " + queen);
         console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
+        // adding to a lose counter
         losses++;
         $('#loseCounter').text(losses);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
         $('#result').text("You lost!");
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);
@@ -160,16 +199,24 @@ $("#queen").click(function () {
         console.log("jack equals " + jack);
     }
 });
+
+// on click for jack
 $("#jack").click(function () {
     playerScore = parseInt(jack) + parseInt(playerScore);
     $('#playerscore').text(playerScore);
+    //if else if for when player score matches or goes over score to win
     if (playerScore === scoreToWin) {
+        // adding to a win counter
         wins++;
         $('#winsCounter').text(wins);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);
@@ -182,13 +229,18 @@ $("#jack").click(function () {
         console.log("queen equals " + queen);
         console.log("jack equals " + jack);
     } else if (playerScore > scoreToWin) {
+        // adding to a lose counter
         losses++;
         $('#loseCounter').text(losses);
+        // reseting player score
         playerScore = 0;
         $('#playerscore').text(playerScore);
+        // generating new random score to win
         scoreToWin = Math.floor(Math.random() * (120) + 1);
         $('#scoreToMatch').text(scoreToWin);
         $('#result').text("You lost!");
+        //test and debugging
+        console.log("score to win is " + scoreToWin);
         //Genertating random value 1-12 for cards
         ace = Math.floor(Math.random() * (12) + 1);
         king = Math.floor(Math.random() * (12) + 1);

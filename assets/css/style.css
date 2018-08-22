@@ -1,0 +1,19 @@
+body{
+    background-image: url("../images/pool_table.png");
+    font-family: 'Kaushan Script', cursive;
+}
+.jumbotron {
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color:antiquewhite;
+  }
+  50% {
+    background-color:lightslategray;
+  }
+  100% {
+    background-color:antiquewhite;
+  }
+}
