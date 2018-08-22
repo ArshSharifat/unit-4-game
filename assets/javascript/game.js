@@ -1,61 +1,98 @@
 //Global Variables----------------------------------------------------
-var scoreToWin = 0;
 var playerScore = 0;
-var wins = "Wins: " + 0;
-$('#winsCounter').text(wins);
-var losses = "Losses: " + 0;
-$('#loseCounter').text(losses);
+var wins = 0;
+var losses = 0;
+
+//Generating random number 1-120 for scoreToWin var
+scoreToWin = Math.floor(Math.random() * (120) + 1);
+$('#scoreToMatch').text(scoreToWin);
+//test and debugging
+console.log("score to win is " + scoreToWin);
+
 //gamecards
 var ace = $("#ace").get(0);
 var king = $("#king").get(0);
 var queen = $("#queen").get(0);
 var jack = $("#jack").get(0);
-
-//Generating random number 1-120 for scoreToWin var
-scoreToWin = Math.floor(Math.random()*(119)+1);
-$('#scoreToMatch').text(scoreToWin);
-//test and debugging
-console.log("score to win is " + scoreToWin);
-
 //Genertating random value 1-12 for cards
-ace = Math.floor(Math.random()*(11)+1);
-king = Math.floor(Math.random()*(11)+1);
-queen = Math.floor(Math.random()*(11)+1);
-jack = Math.floor(Math.random()*(11)+1);
+ace = Math.floor(Math.random() * (12) + 1);
+king = Math.floor(Math.random() * (12) + 1);
+queen = Math.floor(Math.random() * (12) + 1);
+jack = Math.floor(Math.random() * (12) + 1);
 //testing and debugging
 console.log("ace equals " + ace);
 console.log("king equals " + king);
 console.log("queen equals " + queen);
 console.log("jack equals " + jack);
 
-//playerscore
+//Variables to HTML
 $('#playerscore').text(playerScore);
-//testing and debugging
-console.log(playerScore);
+$('#winsCounter').text(wins);
+$('#loseCounter').text(losses);
+
 
 
 
 //Functions------------------------------------------------------------
 
 //On click functions
-$( "#ace" ).click(function() {
-    $('#playerscore').text(playerScore);
+$("#ace").click(function () {
     playerScore = parseInt(ace) + parseInt(playerScore);
-  });
-  $( "#king" ).click(function() {
     $('#playerscore').text(playerScore);
+    if (playerScore === scoreToWin) {
+        wins++;
+        $('#winsCounter').text(wins);
+    } else if (playerScore > scoreToWin) {
+        losses++;
+        $('#loseCounter').text(losses);
+    
+    } {
+        
+    }
+});
+$("#king").click(function () {
     playerScore = parseInt(king) + parseInt(playerScore);
-  });
-  $( "#queen" ).click(function() {
     $('#playerscore').text(playerScore);
+    if (playerScore === scoreToWin) {
+        wins++;
+        $('#winsCounter').text(wins);
+    } else if (playerScore > scoreToWin) {
+        losses++;
+        $('#loseCounter').text(losses);
+    
+    } {
+        
+    }
+});
+$("#queen").click(function () {
     playerScore = parseInt(queen) + parseInt(playerScore);
-  });
-  $( "#jack" ).click(function() {
     $('#playerscore').text(playerScore);
+    if (playerScore === scoreToWin) {
+        wins++;
+        $('#winsCounter').text(wins);
+    } else if (playerScore > scoreToWin) {
+        losses++;
+        $('#loseCounter').text(losses);
+    
+    } {
+        
+    }
+});
+$("#jack").click(function () {
     playerScore = parseInt(jack) + parseInt(playerScore);
-  });
+    $('#playerscore').text(playerScore);
+    if (playerScore === scoreToWin) {
+        wins++;
+        $('#winsCounter').text(wins);
+    } else if (playerScore > scoreToWin) {
+        losses++;
+        $('#loseCounter').text(losses);
+    
+    } {
+        
+    }
+});
 
 //Game logic
-if (playerScore === scoreToWin){
-    
-}
+
+
