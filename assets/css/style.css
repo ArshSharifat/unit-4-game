@@ -1,19 +1,47 @@
+/* body style */
 body{
     background-image: url("../images/pool_table.png");
     font-family: 'Kaushan Script', cursive;
 }
+
+/* jumbron */
 .jumbotron {
     animation: pulse 5s infinite;
 }
-
 @keyframes pulse {
   0% {
-    background-color:antiquewhite;
+    background-color: black;
   }
   50% {
-    background-color:lightslategray;
+    background-color:red;
   }
   100% {
-    background-color:antiquewhite;
+    background-color:black;
   }
+}
+h1.display-4.text-center {
+    color: whitesmoke;
+}
+
+/* button effects */
+
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    z-index: 0;
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+li.list-group-item {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.card-body{
+       background-color: black;
+    color: white;
+    border-color: white; 
 }
