@@ -4,7 +4,7 @@ var wins = 0;
 var losses = 0;
 
 //Generating random number 1-120 for scoreToWin var
-scoreToWin = Math.floor(Math.random() * (120) + 1);
+scoreToWin = Math.floor(Math.random() * (120) + 19);
 $('#scoreToMatch').text(scoreToWin);
 //test and debugging
 console.log("score to win is " + scoreToWin);
